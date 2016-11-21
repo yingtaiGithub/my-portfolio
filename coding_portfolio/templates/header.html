@@ -1,0 +1,31 @@
+{% load static %}
+{% load custom_filters %}
+<div id="header">
+    <div class="site-name">
+		<a id="logo" href={% url 'index' %}>Alex <span>Petrenko</span></a>
+        <!--<a id="logo" href="">code<span>flitting</span></a>-->
+    </div>
+    <div id="nav-menu">
+        <div class="bitcron_nav">
+            <div class="site_nav_wrap">
+                <div class="site_nav">
+
+                    {% with languages=""|getlanguages %}
+                    {% for lang in languages %}
+                    <span class="a_container">
+                        {% if lang == language %}
+                        <a href={% url 'projects_page' lang %}" class="selected active current">{{ lang }}</a>
+                        <!--<a href="" class="selected active current">{{ lang }}</a>-->
+                        {% else %}
+                        <a href={% url 'projects_page' lang %}>{{ lang }}</a>
+                        <!--<a href="">{{ lang }}</a>-->
+                        {% endif %}
+                    </span>
+                    {% endfor %}
+                    {% endwith %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
