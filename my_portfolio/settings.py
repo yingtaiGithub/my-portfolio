@@ -24,9 +24,9 @@ SITE_ID = 1
 SECRET_KEY = "z#$0o$^(tqj9_!6f$p8)!tex3o8g93k3uaw9r@)-1ro7u$m3@z"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-# ALLOWED_HOSTS = ['areeb12.pythonanywhere.com']
+ALLOWED_HOSTS = ['zhangyingtai.pythonanywhere.com']
 
 # Application definition
 

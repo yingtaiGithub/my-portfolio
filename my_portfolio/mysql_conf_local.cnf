@@ -1,0 +1,6 @@
+[client]
+database = mywork
+host = localhost
+user = myworkuser
+password = 1234
+default-character-set = utf8
